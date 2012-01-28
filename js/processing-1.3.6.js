@@ -8135,6 +8135,9 @@
       }
       curElement.dispatchEvent(t)
     });
+    
+    
+    
     (function() {
       var enabled = true,
         contextMenu = function(e) {
