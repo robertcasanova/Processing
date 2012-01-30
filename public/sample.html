@@ -1,10 +1,6 @@
 <html>
 	<head>
 		<script src="js/processing-1.3.6.js"></script>
-		<script src="/socket.io/socket.io.js"></script>
-		<script>
-			var socket = io.connect('http://192.168.1.3:3000');
-		</script>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -13,15 +9,21 @@
 				margin:0;
 				padding:0;
 				width:100%;
-				height:100%;	
+				height:100%;
+				background:orange;	
 			}
 			canvas {
 				margin:0;
-				padding:0;	
+				padding:0;
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-300px;
+				margin-left:-400px;	
 			}
 		</style>
 	</head>
 	<body>
-		<canvas id="sketch" data-processing-sources="pde/cubes.pde"></canvas>
+		<canvas id="sketch" data-processing-sources="pde/ballWall.pde"></canvas>
 	</body>
 </html>
